@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Cuprum";
   font-style: normal;
@@ -115,7 +114,6 @@ a {
 .logo:active {
   background-color: var(--basic-red-hover);
 }
-
 /*Поиск*/
 .site-search:hover {
   background-color: var(--basic-white);
@@ -193,8 +191,6 @@ a {
 .site-navigation-item a {
   color: var(--basic-white);
   font-size: 16px;
-  margin: auto;
-  padding-left: auto;
 }
 .site-navigation-item a:hover {
   color: var(--basic-white);
@@ -313,7 +309,7 @@ a {
   background-color: var(--basic-pink-lighten);
   text-transform: uppercase;
   font-weight: normal;
-  color:var(--basic-blue);
+  color: var(--basic-blue);
   font-size: 30px;
   line-height: 30px;
 }
@@ -357,7 +353,7 @@ a {
 .service-item:active {
   background-color: var(--basic-white);
   color: var(--basic-blue);
-  border:none;
+  border: none;
 }
 /*company-desc*/
 .company-desc-heading,
@@ -389,7 +385,6 @@ a {
   background-color: var(--basic-red);
   top: 10px;
 }
-
  /*Footer*/
 /*футер-топ*/
 .footer-top {
@@ -432,7 +427,7 @@ a {
 }
 .social-button {
   background-color: var(--social-blue);
-  color:var(--basic-white);
+  color: var(--basic-white);
 }
 .social-button:hover,
 .social-button:active {
