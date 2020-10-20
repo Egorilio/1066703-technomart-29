@@ -63,6 +63,7 @@
   --basic-green-darken: #518534;
   --basic-white: #FFFFFF;
   --basic-white-lighten: rgba(255, 255, 255, 0.5);
+  --special-white: rgba(0, 0, 0, 0.15);
   --basic-black: #000000;
   --basic-grey: #F1F5F7;
   --basic-grey-lighten: #EAEAEA;
@@ -506,23 +507,15 @@ a {
   margin-bottom: 10px;
 }
 .catalog-product-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--special-white);
 }
-.catalog-product-item:hover .catalog-product-pic{
-  visibility: hidden;
-}
+
 .catalog-product-item a {
   color: var(--basic-black);
   line-height: 20px;
 }
 .product-item-hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-}
-.product-item-hover .catalog-product-pic{
-  visibility: hidden;
-}
-.product-item-hover .catalog-product-actions {
-  visibility: visible;
+  box-shadow: 0px 4px 20px var(--special-white);
 }
 /*зелёные кнопки*/
 .catalog-product-actions {
@@ -530,39 +523,35 @@ a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  visibility: hidden;
-}
-.catalog-product-item:hover .catalog-product-actions {
-  visibility: visible;
-}
-.catalog-product-actions .buy {
+  width: 100%;
   position: absolute;
-  top: 30%;
-  left: 5%;
+  top: 0;
+  left: 0;
+  background-color: var(--basic-white);
+
+}
+
+.buy {
   color: var(--basic-white);
   background-color: var(--basic-green);
   box-shadow: 0px 3px 0px var(--basic-green-shadow);
   border-radius: 2px;
 }
-.catalog-product-actions .buy:hover {
+.buy:hover {
   background-color: var(--basic-green-hover);
 }
-.catalog-product-actions .buy:active {
+.buy:active {
   background-color: var(--basic-green-darken);
 }
-.catalog-product-actions .add-marks {
-  position: absolute;
-  top: 40%;
-  left: 5%;
-  text-transform: uppercase;
+.add-marks {
   color: var(--basic-blue);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
 }
-.catalog-product-actions .add-marks:hover {
+.add-marks:hover {
   border: 3px solid var(--basic-blue);
 }
-.catalog-product-actions .add-marks:active {
+.add-marks:active {
   border: 3px solid var(--basic-blue);
   color: var(--basic-blue);
   opacity: 0.5;
@@ -572,7 +561,7 @@ a {
   font-size: 13px;
   line-height: 18px;
 }
-.pagination-item .current{
+.pagination-item .current {
   background-color: var(--basic-red);
   color: var(--basic-white);
   border: 1px solid var(--basic-red);
