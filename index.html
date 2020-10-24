@@ -10,35 +10,47 @@
     <header class="main-header">
       <section class="header-top">
         <div class="header-content container">
-          <a class="logo">логотип</a>
-          <form>
-            <input type="search" name="search" placeholder="Поиск:" class="site-search">
-          </form>
-          <a class="marks" href="#">Закладки: 0</a>
-          <a class="cart" href="#">Корзина: 0</a>
-          <a class="order" href="blank.html">Оформить заказ</a>
+          <div class="header-top-left">
+            <a class="logo">логотип</a>
+            <form class="form-search">
+              <input type="search" name="search" placeholder="Поиск:" class="site-search">
+            </form>
+          </div>
+          <div class="header-top-right">
+            <a class="marks" href="#">Закладки: 0</a>
+            <a class="cart" href="#">Корзина: 0</a>
+            <a class="order" href="blank.html">Оформить заказ</a>
+          </div>
         </div>
       </section>
       <section class="header-bottom">
         <div class="header-content container">
-          <p class="site-desc">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          <p class="location-adress">
-            <a class="phone-number-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-          <a class="login-link" href="blank.html">Войти</a>
-          <a class="registration-link" href="blank.html">Регистрация</a>
-          <nav class="main-navigation">
-            <ul class="site-navigation clear-list">
-              <li class="site-navigation-item"><a>Главная</a></li>
-              <li class="site-navigation-item"><a href="blank.html">Компания</a></li>
-              <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
-              <li class="site-navigation-item"><a href="blank.html">Новости</a></li>
-              <li class="site-navigation-item"><a href="blank.html">Спецпредложения</a></li>
-              <li class="site-navigation-item"><a href="blank.html">Доставка</a></li>
-              <li class="site-navigation-item"><a href="blank.html">Контакты</a></li>
-            </ul>
-          </nav>
+          <div>
+            <p class="site-desc">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          </div>
+          <div class="header-location-wrapper">
+            <p class="location-adress">
+              <a class="phone-number-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="login-registration">
+            <a class="login-link" href="blank.html">Войти</a>
+            <a class="registration-link" href="blank.html">Регистрация</a>
+          </div>
+          <div class="navigation-wrapper">
+            <nav class="main-navigation">
+              <ul class="site-navigation clear-list">
+                <li class="site-navigation-item"><a>Главная</a></li>
+                <li class="site-navigation-item"><a href="blank.html">Компания</a></li>
+                <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
+                <li class="site-navigation-item"><a href="blank.html">Новости</a></li>
+                <li class="site-navigation-item"><a href="blank.html">Спецпредложения</a></li>
+                <li class="site-navigation-item"><a href="blank.html">Доставка</a></li>
+                <li class="site-navigation-item"><a href="blank.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </section>
     </header>
@@ -73,8 +85,10 @@
         </ul>
       </section>
       <section class="popular-product container">
-        <h2 class="popular-product-heading">популярные товары:</h2>
-        <a class="red-button" href="#">все популярные товары</a>
+        <div class="popular-product-wrapper">
+          <h2 class="popular-product-heading">популярные товары:</h2>
+          <a class="red-button" href="#">все популярные товары</a>
+        </div>
         <ul class="popular-product-list clear-list">
           <li class="popular-product-item">
             <a href="#">
@@ -118,55 +132,59 @@
         </ul>
       </section>
       <section class="popular-brand container">
-       <h2 class="popular-brand-heading">Популярные производители:</h2>
-       <a class="red-button" href="#">все производители</a>
-       <ul class="popular-brand-list clear-list">
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/bosch.png" width="126" height="37" alt="BOSCH ">
-           </a>
-         </li>
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/makita.png" width="123" height="40" alt="Makita">
-           </a>
-         </li>
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/dewalt.png" width="146" height="44" alt="Dewalt">
-           </a>
-         </li>
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/interskol.png" width="200" height="76" alt="Interskol">
-           </a>
-         </li>
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
-           </a>
-         </li>
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/lg.png" width=""121 height="73" alt="LG">
-           </a>
-         </li>
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/aeg.png" width="151" height="98" alt="AEG">
-           </a>
-         </li>
-         <li class="popular-brand-item">
-           <a href="">
-            <img src="img/metabo.png" width="206" height="73" alt="metabo">
-           </a>
-         </li>
-       </ul>
+        <div class="popular-product-wrapper">
+          <h2 class="popular-brand-heading">Популярные производители:</h2>
+          <a class="red-button" href="#">все производители</a>
+        </div>
+        <ul class="popular-brand-list clear-list">
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/bosch.png" width="126" height="37" alt="BOSCH ">
+            </a>
+          </li>
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/makita.png" width="123" height="40" alt="Makita">
+            </a>
+          </li>
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/dewalt.png" width="146" height="44" alt="Dewalt">
+            </a>
+          </li>
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/interskol.png" width="200" height="76" alt="Interskol">
+            </a>
+          </li>
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
+            </a>
+          </li>
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/lg.png" width=""121 height="73" alt="LG">
+            </a>
+          </li>
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/aeg.png" width="151" height="98" alt="AEG">
+            </a>
+          </li>
+          <li class="popular-brand-item">
+            <a href="">
+              <img src="img/metabo.png" width="206" height="73" alt="metabo">
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="service">
         <div class="container">
-          <h2 class="service-heading">Сервисы</h2>
-          <p class="service-desc">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="service-wrapper">
+            <h2 class="service-heading">Сервисы</h2>
+            <p class="service-desc">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          </div>
           <ul class="service-list clear-list">
             <li class="service-item">Доставка</li>
             <li class="service-item">Гарантия</li>
@@ -178,33 +196,39 @@
           </div>
         </div>
       </section>
-      <section class="company-desc container">
-        <h2 class="company-desc-heading">КОМПАНИЯ «Техномарт»</h2>
-        <p class="company-desc-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="company-desc-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="company-desc-list clear-list">
-          <li class="company-desc-item">Деловые линии</li>
-          <li class="company-desc-item">Автотрейдинг</li>
-          <li class="company-desc-item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="red-button" href="#">подробнее о компании</a>
-      </section>
-      <section class="company-contacts container">
-        <h2 class="company-contacts-heading">контакты</h2>
-        <p class="company-contacts-text">Вы можете забрать товар сами,
-        заехав в наш офис:</p>
-        <a href="#">Карта адрес</a>
-        <a class="red-button" href="#">Заблудились? Напишите нам!</a>
-      </section>
+      <div class="desc-wrapper container">
+        <section class="company-desc">
+          <h2 class="company-desc-heading">КОМПАНИЯ «Техномарт»</h2>
+          <p class="company-desc-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="company-desc-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="company-desc-list clear-list">
+            <li class="company-desc-item">Деловые линии</li>
+            <li class="company-desc-item">Автотрейдинг</li>
+            <li class="company-desc-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="red-button" href="#">подробнее о компании</a>
+        </section>
+        <section class="company-contacts">
+          <h2 class="company-contacts-heading">контакты</h2>
+          <p class="company-contacts-text">Вы можете забрать товар сами,
+          заехав в наш офис:</p>
+          <a href="#">Карта адрес</a>
+          <a class="red-button" href="#">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <section class="footer-top">
         <div class="container">
-          <a class="logo">логотип</a>
-          <p class="footer-top-text">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a class="phone-number-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </p>
+          <div class="">
+            <a class="logo">логотип</a>
+          </div>
+          <div class="footer-info">
+            <p class="footer-top-text">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              <a class="phone-number-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </p>
+          </div>
           <ul class="footer-navigation clear-list">
             <li class="footer-navigation-item"><a href="blank.html">Компания</a></li>
             <li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
