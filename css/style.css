@@ -114,7 +114,6 @@ img {
   padding: 0;
   margin: 0;
 }
-
 /*Header*/
 .main-header {
 }
@@ -536,6 +535,10 @@ img {
   color: var(--special-grey);
 }
 /*Main*/
+.page-catalog .container {
+  display: grid;
+  grid-template-columns: 220px 3fr;
+}
 .perforators-heading {
   font-size: 30px;
   line-height: 30px;
@@ -543,12 +546,15 @@ img {
   text-transform: uppercase;
   color: var(--basic-blue);
   background-color: var(--basic-grey);
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
 }
 .breadcrumbs {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
+  grid-column: 1 / -1;
 }
 .breadcrumbs a {
   color: var(--basic-black);
@@ -557,6 +563,10 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 .catalog-product-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  height: 100%;
 }
 .catalog-product-item {
   position: relative;
