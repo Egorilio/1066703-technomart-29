@@ -10,26 +10,30 @@
     <header class="main-header">
       <section class="header-top">
         <div class="header-content container">
-          <a class="logo">логотип</a>
-          <form class="form-search">
-            <input type="search" name="search" placeholder="Поиск:" class="site-search">
-          </form>
-          <a class="marks" href="#">Закладки: 0</a>
-          <a class="cart" href="#">Корзина: 0</a>
-          <a class="order" href="blank.html">Оформить заказ</a>
+          <div class="logosearch-wrapper">
+            <a class="logo">логотип</a>
+            <form class="form-search">
+              <input type="search" name="search" placeholder="Поиск:" class="site-search">
+            </form>
+          </div>
+          <div class="mco-wrapper">
+            <a class="marks" href="#">Закладки: 0</a>
+            <a class="cart" href="#">Корзина: 0</a>
+            <a class="order" href="blank.html">Оформить заказ</a>
+          </div>
         </div>
       </section>
       <section class="header-bottom">
         <div class="header-content container">
-          <div>
-            <p class="site-desc">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          </div>
+          <p class="site-desc">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <p class="location-adress">
             <a class="phone-number-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-          <a class="login-link" href="blank.html">Войти</a>
-          <a class="registration-link" href="blank.html">Регистрация</a>
+          <div class="login-registration">
+            <a class="login-link" href="blank.html">Войти</a>
+            <a class="registration-link" href="blank.html">Регистрация</a>
+          </div>
           <nav class="main-navigation">
             <ul class="site-navigation clear-list">
               <li class="site-navigation-item"><a>Главная</a></li>
@@ -75,8 +79,10 @@
         </ul>
       </section>
       <section class="popular-product container">
-        <h2 class="popular-product-heading">популярные товары:</h2>
-        <a class="red-button" href="#">все популярные товары</a>
+        <div class="popular-product-wrapper">
+          <h2 class="popular-product-heading">Популярные товары:</h2>
+          <a class="red-button" href="#">Все популярные товары</a>
+        </div>
         <ul class="popular-product-list clear-list">
           <li class="popular-product-item">
             <a href="#">
@@ -120,8 +126,10 @@
         </ul>
       </section>
       <section class="popular-brand container">
-        <h2 class="popular-brand-heading">Популярные производители:</h2>
-        <a class="red-button" href="#">все производители</a>
+        <div class="popular-product-wrapper">
+          <h2 class="popular-brand-heading">Популярные производители:</h2>
+          <a class="red-button" href="#">все производители</a>
+        </div>
         <ul class="popular-brand-list clear-list">
           <li class="popular-brand-item">
             <a href="">
@@ -206,26 +214,28 @@
     <footer class="footer">
       <section class="footer-top">
         <div class="container">
-          <div class="">
+          <div class="footer-top-wrapper logo-wrapper">
             <a class="logo">логотип</a>
+            <p class="footer-top-text">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              <a class="phone-number-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </p>
           </div>
-          <p class="footer-top-text">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a class="phone-number-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </p>
-          <ul class="footer-navigation clear-list">
-            <li class="footer-navigation-item"><a href="blank.html">Компания</a></li>
-            <li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
-            <li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
-            <li class="footer-navigation-item"><a href="blank.html">Доставка</a></li>
-            <li class="footer-navigation-item"><a href="blank.html">Контакты</a></li>
-          </ul>
-          <ul class="footer-promo-list clear-list">
-            <li class="footer-promo-item"><a href="#">Материалы</a></li>
-            <li class="footer-promo-item"><a href="#">Техника</a></li>
-            <li class="footer-promo-item"><a href="#">Инструмент</a></li>
-            <li class="footer-promo-item"><a href="#">Спецпредложения</a></li>
-          </ul>
+          <div class="footer-top-wrapper nav-wrapper">
+            <ul class="footer-navigation clear-list">
+              <li class="footer-navigation-item"><a href="blank.html">Компания</a></li>
+              <li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
+              <li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
+              <li class="footer-navigation-item"><a href="blank.html">Доставка</a></li>
+              <li class="footer-navigation-item"><a href="blank.html">Контакты</a></li>
+            </ul>
+            <ul class="footer-promo-list clear-list">
+              <li class="footer-promo-item"><a href="#">Материалы</a></li>
+              <li class="footer-promo-item"><a href="#">Техника</a></li>
+              <li class="footer-promo-item"><a href="#">Инструмент</a></li>
+              <li class="footer-promo-item"><a href="#">Спецпредложения</a></li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="footer-bottom">
@@ -236,8 +246,10 @@
             <li><a class="social-button" href="#">FB</a></li>
             <li><a class="social-button" href="#">INST</a></li>
           </ul>
-          <p class="footer-bottom-text">Обратная связь:<a class="feedback" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-          <p class="footer-bottom-text">Разработано -<a class="developers" href=" https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          <div class="footer-bottom-wrapper">
+            <p class="footer-bottom-text">Обратная связь:<a class="feedback" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+            <p class="footer-bottom-text">Разработано -<a class="developers" href=" https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          </div>
         </div>
       </section>
     </footer>

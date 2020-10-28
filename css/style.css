@@ -119,6 +119,16 @@ img {
 }
 .header-top {
   background-color: var(--basic-blue-darken);
+  display: flex;
+}
+.header-top .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logosearch-wrapper {
+  display: flex;
+  align-items: center;
 }
 .logo {
   display: block;
@@ -131,6 +141,9 @@ img {
   background-color: var(--basic-red-hover);
 }
 /*Поиск*/
+.site-search {
+  align-items: flex-end;
+}
 .site-search:hover {
   background-color: var(--basic-white);
   border: none;
@@ -140,6 +153,10 @@ img {
 .cart,
 .order {
   color: var(--basic-white);
+}
+.mco-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 .marks:active,
 .cart:active {
@@ -160,22 +177,49 @@ img {
   background-color: var(--basic-grey);
   padding-bottom: 74px;
 }
+.header-bottom .header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  align-items: center;
+}
 .site-desc {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
-  margin: 0;
-}
-.phone-number-header {
-  font-size: 21px;
-  line-height: 30px;
-  color: var(--basic-red);
-  border: 3px solid var(--basic-white);
+  width: 300px;
+  align-self: flex-start;
+  margin-top: 41px;
 }
 .location-adress {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: flex-start;
   font-size: 14px;
+  width: 300px;
+  margin-top: 41px;
   color: var(--basic-blue);
+}
+.phone-number-header {
+  display: flex;
+  font-size: 21px;
+  line-height: 30px;
+  justify-content: center;
+  align-self: center;
+  color: var(--basic-red);
+  border: 3px solid var(--basic-white);
+
+}
+.login-registration {
+  display: flex;
+  width: 300px;
+  align-self: flex-start;
+  justify-content: flex-end;
+  margin-top: 41px;
 }
 .login-link,
 .registration-link,
@@ -199,16 +243,24 @@ img {
   color: var(--special-grey);
 }
 .main-navigation {
+  display: flex;
   background-color: var(--basic-blue);
 }
 .site-navigation {
+  display: flex;
+  width: 940px;
+  justify-content: space-around;
   box-shadow: 0 5px 0 var(--basic-blue-darken);
   padding-left: 0;
 }
-
+.site-navigation-item {
+  display: flex;
+  justify-content: space-between;
+}
 .site-navigation-item a {
   color: var(--basic-white);
   font-size: 16px;
+  justify-content: space-between;
 }
 .site-navigation-item a:hover {
   color: var(--basic-white);
@@ -298,12 +350,18 @@ img {
 /*Популярные товары*/
 .popular-product {
   font-family: "PT Sans", "Arial", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 .popular-product-wrapper {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   background-color: var(--basic-pink-lighten);
   align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.popular-product-wrapper a {
+  width: 192px;
 }
 .popular-product-heading {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -313,6 +371,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-blue);
   background-color: var(--basic-pink-lighten);
+  width: 100%;
 }
 .popular-product-list {
   display: grid;
@@ -344,6 +403,7 @@ img {
   color: var(--basic-blue);
   font-size: 30px;
   line-height: 30px;
+  width: 100%;
 }
 .popular-brand-list {
   display: grid;
@@ -453,18 +513,37 @@ img {
 .footer-top {
   background-color: var(--basic-blue);
 }
+.footer-top .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+.logo-wrapper {
+  width: 320px;
+}
+.nav-wrapper {
+  width: 550px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer-top-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .footer-top-text,
 .phone-number-footer {
   color: var(--basic-white);
 }
 .phone-number-footer {
 }
-.footer-bottom {
-  background-color: var(--basic-blue-darken);
+.footer-navigation {
+  display: flex;
+  margin-bottom: 34px;
 }
-
 .footer-navigation a {
   color: var(--basic-grey);
+  margin-left: 58px;
 }
 .footer-navigation a:hover {
   text-decoration: underline;
@@ -473,8 +552,14 @@ img {
   color: var(--basic-grey);
   opacity: 50%;
 }
+.footer-promo-list {
+  display: flex;
+  justify-content: flex-end;
+}
 .footer-promo-item {
   align-self: center;
+  justify-content: space-between;
+  margin-left: 60px;
 }
 .footer-promo-item a {
   color: var(--special-gold);
@@ -486,6 +571,20 @@ img {
   opacity: 50%;
 }
 /*футер-боттом*/
+.footer-bottom {
+  background-color: var(--basic-blue-darken);
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom-wrapper {
+  display: flex;
+  width: 300px;
+}
+.footer-bottom-text:first-child {
+  width: 250px;
+}
 .footer-bottom-social {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -502,10 +601,15 @@ img {
 }
 .footer-bottom-text {
   color: var(--basic-white);
+  line-height: 18px;
+  font-size: 16px;
 }
 .feedback,
 .developers {
   color: var(--special-gold);
+  display: flex;
+}
+.feedback {
 }
 .feedback:hover,
 .developers:hover {
@@ -534,6 +638,7 @@ img {
 .private-area:active {
   color: var(--special-grey);
 }
+
 /*Main*/
 .page-catalog .container {
   display: grid;
