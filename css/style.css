@@ -142,7 +142,6 @@ img {
 }
 /*Поиск*/
 .site-search {
-  align-items: flex-end;
 }
 .site-search:hover {
   background-color: var(--basic-white);
@@ -182,8 +181,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: auto;
-  align-items: center;
 }
 .site-desc {
   font-style: italic;
@@ -191,33 +188,24 @@ img {
   line-height: 23px;
   color: var(--basic-red);
   width: 300px;
-  align-self: flex-start;
   margin-top: 41px;
 }
 .location-adress {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-self: flex-start;
+  text-align: center;
   font-size: 14px;
-  width: 300px;
   margin-top: 41px;
   color: var(--basic-blue);
 }
 .phone-number-header {
-  display: flex;
+  display: block;
   font-size: 21px;
   line-height: 30px;
-  justify-content: center;
-  align-self: center;
   color: var(--basic-red);
   border: 3px solid var(--basic-white);
-
 }
 .login-registration {
   display: flex;
   width: 300px;
-  align-self: flex-start;
   justify-content: flex-end;
   margin-top: 41px;
 }
@@ -243,7 +231,6 @@ img {
   color: var(--special-grey);
 }
 .main-navigation {
-  display: flex;
   background-color: var(--basic-blue);
 }
 .site-navigation {
@@ -254,13 +241,10 @@ img {
   padding-left: 0;
 }
 .site-navigation-item {
-  display: flex;
-  justify-content: space-between;
 }
 .site-navigation-item a {
   color: var(--basic-white);
   font-size: 16px;
-  justify-content: space-between;
 }
 .site-navigation-item a:hover {
   color: var(--basic-white);
@@ -298,7 +282,6 @@ img {
   grid-template-rows: auto auto auto;
 }
 .promo-information-item {
-
 }
 .promo-information-item p {
   font-size: 24px;
@@ -350,15 +333,11 @@ img {
 /*Популярные товары*/
 .popular-product {
   font-family: "PT Sans", "Arial", sans-serif;
-  display: flex;
-  flex-wrap: wrap;
 }
 .popular-product-wrapper {
   display: flex;
   background-color: var(--basic-pink-lighten);
   align-items: center;
-  width: 100%;
-  margin: auto;
 }
 .popular-product-wrapper a {
   width: 192px;
@@ -394,7 +373,6 @@ img {
 }
 /*Популярные производители*/
 .popular-brand {
-
 }
 .popular-brand-heading {
   background-color: var(--basic-pink-lighten);
@@ -450,7 +428,6 @@ img {
   line-height: 24px;
 }
 .service-list {
-
 }
 .service-item {
   background-color: var(--basic-blue);
@@ -517,7 +494,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
 }
 .logo-wrapper {
   width: 320px;
@@ -541,9 +517,11 @@ img {
   display: flex;
   margin-bottom: 34px;
 }
+.footer-navigation-item {
+  margin-left: 58px;
+}
 .footer-navigation a {
   color: var(--basic-grey);
-  margin-left: 58px;
 }
 .footer-navigation a:hover {
   text-decoration: underline;
@@ -578,18 +556,14 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.footer-bottom-wrapper {
-  display: flex;
-  width: 300px;
-}
 .footer-bottom-text:first-child {
-  width: 250px;
+width: 240px;
 }
 .footer-bottom-social {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  justify-self: center;
   align-self: center;
+  margin-left: auto;
 }
 .social-button {
   background-color: var(--social-blue);
@@ -609,7 +583,12 @@ img {
   color: var(--special-gold);
   display: flex;
 }
-.feedback {
+.feedback-text {
+  margin-left: auto;
+  margin-right: 50px;
+}
+.dev-text {
+  margin-right: 15px;
 }
 .feedback:hover,
 .developers:hover {
