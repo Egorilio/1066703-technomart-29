@@ -205,6 +205,7 @@ img {
 }
 .login-registration {
   display: flex;
+  flex-wrap: wrap;
   width: 300px;
   justify-content: flex-end;
   margin-top: 41px;
@@ -603,11 +604,23 @@ width: 240px;
 .catalog-cart {
   background-color: var(--basic-red);
 }
+.catalog-login {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  justify-content: flex-end;
+  margin-top: 41px;
+}
+.user-link {
+}
+.my-orders {
+}
 .my-orders,
 .private-area {
   color: var(--basic-blue);
   line-height: 18px;
   font-size: 16px;
+  align-self: center;
 }
 .my-orders:hover,
 .private-area:hover {
