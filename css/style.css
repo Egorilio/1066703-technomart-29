@@ -76,6 +76,7 @@
   --basic-violet: #DC91D8;
   --basic-light-green: #8ED78F;
   --basic-pink-lighten: #F9F5F0;
+  --basic-pink-filter: #F7F3EC;
   --special-gold: #FFD180;
   --social-blue: #212A3A;
 }
@@ -647,14 +648,56 @@ width: 240px;
   grid-row: 2 / 3;
 }
 .breadcrumbs {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
   grid-column: 1 / -1;
 }
+.breadcrumbs-item {
+  margin-right: 18px;
+}
 .breadcrumbs a {
   color: var(--basic-black);
+}
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--basic-pink-filter);
+}
+.sorting-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-between;
+}
+.sorting-item {
+  margin-right: 10px;
+}
+.sorting-item-type a {
+  color: var(--basic-black);
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  border-bottom: 1px dotted var(--basic-red);
+  opacity: 0.3;
+}
+.sorting-item-type a:hover {
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
+}
+.sorting-item-type a:active {
+  color: var(--basic-red);
+  border: none;
 }
 .catalog-product {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -679,6 +722,11 @@ width: 240px;
 }
 .product-item-hover {
   box-shadow: 0px 4px 20px var(--special-white);
+}
+.perforators-desc .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 /*зелёные кнопки*/
 .catalog-product-actions {
@@ -719,8 +767,12 @@ width: 240px;
 }
 /*Пагинация*/
 .pagination {
+  display: flex;
   font-size: 13px;
   line-height: 18px;
+}
+.pagination-item {
+  margin-right: 10px;
 }
 .pagination-item .current {
   background-color: var(--basic-red);
