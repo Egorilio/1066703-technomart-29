@@ -228,7 +228,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0;
 }
 .site-desc {
   font-style: italic;
@@ -295,8 +294,13 @@ img {
   margin-left: 6px;
 }
 /*Иконка войти*/
-.login-link:hover path {
+.login-link:hover path,
+.user-link:hover path {
   fill: var(--special-blue-icon);
+}
+.login-link:active path,
+.user-link:active path {
+  fill: var(--special);
 }
 .login-link:hover,
 .registration-link:hover {
@@ -476,10 +480,9 @@ img {
   position: relative;
   grid-column: 1 / 3;
   grid-row: 2 / 4;
-  height: 266px;
+  min-height: 266px;
   width: 620px;
   background-color: var(--basic-grey-darken);
-
 }
 .first-slide {
   background-image: url("../img/slider-main1.jpg");
@@ -516,9 +519,6 @@ img {
   background-color: var(--basic-red);
 }
 .slider-btn {
-  position: relative;
-}
-.slider-btn-left:before {
   position: absolute;
   content: "";
   width: 22px;
@@ -526,19 +526,18 @@ img {
   background-image: url("../img/icon-left.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  bottom: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider-btn-left {
   left: 24px;
 }
-.slider-btn-right:before {
-  position: absolute;
-  content: "";
-  width: 22px;
-  height: 40px;
-  background-image: url("../img/icon-right.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  bottom: 100px;
-  left: 556px;
+.slider-btn-right {
+  right: 24px;
+  transform: translateY(-50%)rotate(180deg);
 }
 .slider-btn-current {
   opacity: 0.4;
@@ -750,8 +749,7 @@ img {
   position: relative;
   display: block;
   width: 619px;
-  height: 283px;
-  margin-bottom: 0px;
+  margin-bottom: 150px;
 }
 .service-slider:after {
   position: absolute;
@@ -1066,20 +1064,46 @@ img {
 .catalog-login {
   display: flex;
   flex-wrap: wrap;
-  width: 250px;
-  justify-content: flex-end;
+  width: 300px;
+  justify-content: center;
   margin-top: 41px;
 }
 .user-link {
+  min-width: 100%;
+  text-align: center;
+  padding: ;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.user-name {
+  margin-left: 21px;
+  margin-right: 20px;
 }
 .my-orders {
+  position: relative;
+  margin-right: 13px;
+}
+.my-orders:after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--basic-blue);
+  top: 50%;
+  right: -13px;
+  transform: translateY(-50%);
+}
+.private-area {
+  margin-left: 13px;
 }
 .my-orders,
 .private-area {
   color: var(--basic-blue);
   line-height: 18px;
   font-size: 16px;
-  align-self: center;
+  margin-top: 7px;
 }
 .my-orders:hover,
 .private-area:hover {
