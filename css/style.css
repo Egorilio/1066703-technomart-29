@@ -46,7 +46,6 @@
        url("../fonts/ptsansbold.woff2") format("woff2"),
        url("../fonts/ptsansbold.woff") format("woff");
 }
-/*Variables*/
 :root {
   --basic-red: #EE3643;
   --basic-red-hover: #CA2C37;
